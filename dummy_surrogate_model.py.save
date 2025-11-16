@@ -1,0 +1,48 @@
+import random
+import pandas as pd
+
+# --- DUMMY MODEL 1: THE RACE PREDICTOR ---
+class DummySurrogateModel_Race:
+    def predict(self, state_df: pd.DataFrame) -> dict:
+        # Fake logic:
+        p_win = random.uniform(0.1, 0.9)
+        p_top3 = min(p_win + 0.15, 1.0)
+        pos = state_df['position'].iloc[0]
+        expected_pos = pos + random.uniform(-0.5, 0.5)
+
+        # Return the EXACT contract format
+        return {
+            'P(Win)': p_win,
+            'P(Top3)': p_top3,
+            'Expected_Pos': expected_pos
+        }
+
+# --- DUMMY MODEL 2: THE TIRE PREDICTOR ---
+class DummySurrogateModel_Tire:
+    def predict_wear(self, state_df: pd.DataFrame) -> dict:
+        # Fake logic: "Will tires last the race?"
+        current_wear = state_df['tire_wear'].iloc[0]
+        laps_left = 45 - state_df['lap'].iloc[0]
+
+        # Predict ~2.5% wear per lap + random noise
+        predicted_final_wear = current_wear + (laps_left * 0.025) + random.uniform(-0.1, 0.1)
+
+        return {
+            'Predicted_Final_Wear': predicted_final_wear,
+            'Cliff_Risk': "High" if predicted_final_wear > 0.95 else "Low"
+        }
+
+# --- LOADER FUNCTIONS (What your app will call) ---
+
+def load_race_model():
+    """This function is what you'll call from your main app."""
+    print("--- LOADING DUMMY *RACE* SURROGATE MODEL ---")
+    return DummySurrogateModel_Race()
+
+def load_tire_model():
+    """This function is what you'll call from your main app."""
+    print("--- LOADING DUMMY *TIRE* SURROGATE MODEL ---"
+
+
+
+
