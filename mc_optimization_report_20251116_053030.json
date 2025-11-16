@@ -1,0 +1,17 @@
+{
+  "best_attack_mode_lap": 15,
+  "attack_mode_success_rate": 1.0,
+  "best_pit_window": [
+    15,
+    35
+  ],
+  "pit_window_success_rate": 0.5,
+  "best_configuration": {
+    "attack_mode_lap": 15,
+    "pit_window_start": 15,
+    "pit_window_end": 35,
+    "top3_finish_rate": 0.3,
+    "avg_finishing_position": 5.5
+  },
+  "all_config_stats": {
+    

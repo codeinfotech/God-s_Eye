@@ -1,0 +1,191 @@
+{
+  "final_standings": [
+    {
+      "position": 1,
+      "car_id": 2,
+      "strategy": "conservative",
+      "laps_completed": 53,
+      "final_energy": 34.663468154730026,
+      "pit_stops": 1,
+      "attack_mode_uses": 0,
+      "final_status": "Finished",
+      "avg_lap_time": 2391.245283018868
+    },
+    {
+      "position": 2,
+      "car_id": 5,
+      "strategy": "conservative",
+      "laps_completed": 53,
+      "final_energy": 34.663468154730026,
+      "pit_stops": 1,
+      "attack_mode_uses": 0,
+      "final_status": "Finished",
+      "avg_lap_time": 2391.245283018868
+    },
+    {
+      "position": 3,
+      "car_id": 8,
+      "strategy": "conservative",
+      "laps_completed": 53,
+      "final_energy": 34.663468154730026,
+      "pit_stops": 1,
+      "attack_mode_uses": 0,
+      "final_status": "Finished",
+      "avg_lap_time": 2391.245283018868
+    },
+    {
+      "position": 4,
+      "car_id": 1,
+      "strategy": "balanced",
+      "laps_completed": 53,
+      "final_energy": 26.44395491458392,
+      "pit_stops": 1,
+      "attack_mode_uses": 0,
+      "final_status": "Finished",
+      "avg_lap_time": 2233.801886792453
+    },
+    {
+      "position": 5,
+      "car_id": 3,
+      "strategy": "balanced",
+      "laps_completed": 53,
+      "final_energy": 26.44395491458392,
+      "pit_stops": 1,
+      "attack_mode_uses": 0,
+      "final_status": "Finished",
+      "avg_lap_time": 2233.801886792453
+    },
+    {
+      "position": 6,
+      "car_id": 6,
+      "strategy": "balanced",
+      "laps_completed": 53,
+      "final_energy": 26.44395491458392,
+      "pit_stops": 1,
+      "attack_mode_uses": 0,
+      "final_status": "Finished",
+      "avg_lap_time": 2233.801886792453
+    },
+    {
+      "position": 7,
+      "car_id": 9,
+      "strategy": "balanced",
+      "laps_completed": 53,
+      "final_energy": 26.44395491458392,
+      "pit_stops": 1,
+      "attack_mode_uses": 0,
+      "final_status": "Finished",
+      "avg_lap_time": 2233.801886792453
+    },
+    {
+      "position": 8,
+      "car_id": 7,
+      "strategy": "aggressive",
+      "laps_completed": 52,
+      "final_energy": 17.43822513429625,
+      "pit_stops": 1,
+      "attack_mode_uses": 2,
+      "final_status": "Finished",
+      "avg_lap_time": 2109.0
+    },
+    {
+      "position": 9,
+      "car_id": 0,
+      "strategy": "aggressive",
+      "laps_completed": 52,
+      "final_energy": 17.376256732265652,
+      "pit_stops": 1,
+      "attack_mode_uses": 2,
+      "final_status": "Finished",
+      "avg_lap_time": 2109.6826923076924
+    },
+    {
+      "position": 10,
+      "car_id": 4,
+      "strategy": "aggressive",
+      "laps_completed": 52,
+      "final_energy": 17.346317355709097,
+      "pit_stops": 1,
+      "attack_mode_uses": 2,
+      "final_status": "Finished",
+      "avg_lap_time": 2111.0384615384614
+    }
+  ],
+  "strategy_comparison": {
+    "aggressive": {
+      "avg_position": 9.0,
+      "avg_laps": 52.0,
+      "avg_pits": 1.0,
+      "avg_final_energy": 17.386933074090333,
+      "avg_attack_uses": 2.0,
+      "dnf_count": 0,
+      "finisher_count": 3,
+      "total_cars": 3
+    },
+    "balanced": {
+      "avg_position": 5.5,
+      "avg_laps": 53.0,
+      "avg_pits": 1.0,
+      "avg_final_energy": 26.44395491458392,
+      "avg_attack_uses": 0.0,
+      "dnf_count": 0,
+      "finisher_count": 4,
+      "total_cars": 4
+    },
+    "conservative": {
+      "avg_position": 2.0,
+      "avg_laps": 53.0,
+      "avg_pits": 1.0,
+      "avg_final_energy": 34.663468154730026,
+      "avg_attack_uses": 0.0,
+      "dnf_count": 0,
+      "finisher_count": 3,
+      "total_cars": 3
+    }
+  },
+  "best_strategy": "balanced",
+  "events": [
+    {
+      "time": 30.5,
+      "type": "attack_mode",
+      "car_id": 7
+    },
+    {
+      "time": 1003.0,
+      "type": "attack_mode",
+      "car_id": 0
+    },
+    {
+      "time": 1003.0,
+      "type": "attack_mode",
+      "car_id": 4
+    },
+    {
+      "time": 1032.0,
+      "type": "attack_mode",
+      "car_id": 4
+    },
+    {
+      "time": 1035.0,
+      "type": "attack_mode",
+      "car_id": 7
+    },
+    {
+      "time": 1065.5,
+      "type": "attack_mode",
+      "car_id": 0
+    },
+    {
+      "time": 1913.0,
+      "type": "weather",
+      "condition": "rain"
+    }
+  ],
+  "simulation_time": 0.5599887371063232,
+  "random_seed": 69140,
+  "crashes": 0,
+  "safety_cars": 0,
+  "weather_changes": 1,
+  "dnfs": 0,
+  "finishers": 10
+}
